@@ -5,17 +5,14 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #2a003f;
 }
-
 body {
     width: 1050px;
     margin: 0 auto;
     padding-right: 100px;
     padding-left: 100px;
     padding-top: 160px;
-    border-radius: 20px;
     background-color: #2a003f;
 }
-
 #naslov {
     color: #fae62d;
     background-color: #2a003f;
@@ -24,14 +21,12 @@ body {
     bottom: 100px;
     font-size: 40px;
 }
-
-.background {
+article {
     background: url("pozadina.gif");
     background-position: center;
     width: 100%;
     height: 2100px;
 }
-
 .osoba {
     color: #2b4f60;
     position: relative;
@@ -40,25 +35,20 @@ body {
     border-radius: 20px;
     z-index: 2;
 }
-
 .osoba h1 {
     text-align: center;
     border-radius: 20px; 
 }
-
-
 .slika {
     height: 370px;
     padding: 2px;
     background-color: #31efe7;
     border-radius: 20px;
 }
-
 .slika img {
     width: 100%;
     border-radius: 20px;
 }
-
 .hidden1 {
     height: 400px;
     position: relative;
@@ -70,7 +60,6 @@ body {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-
 .tekst1 {
     position: relative;
     width: 85%;
@@ -82,15 +71,12 @@ body {
     color: #2a003f;
     font-weight: bold;
 }
-
 .tekst1 p {
     padding-bottom: 45px;
 }
-
 .osoba:hover + .hidden1 {
     z-index: 0;
 }
-
 .osoba2 {
     width: 30%;
     color: #2b4f60;
@@ -101,12 +87,10 @@ body {
     left: 70%;
     bottom: 300px;
 }
-
 .osoba2 h1 {
     text-align: center;
     border-radius: 20px; 
 }
-
 .hidden2 {
     height: 400px;
     position: relative;
@@ -118,7 +102,6 @@ body {
     border-top-left-radius: 25px;
     z-index: -1;
 }
-
 .tekst2 {
     position: relative;
     width: 85%;
@@ -129,7 +112,6 @@ body {
     font-weight: bold;
     text-align: right;
 }
-
 .tekst2 p {
     padding-bottom: 45px;
 }
@@ -137,7 +119,6 @@ body {
 .osoba2:hover + .hidden2 {
     z-index: 0;
 }
-
 .osoba3 {
     color: #2b4f60;
     position: relative;
@@ -147,12 +128,10 @@ body {
     z-index: 2;
     bottom: 600px;
 }
-
 .osoba3 h1 {
     text-align: center;
     border-radius: 20px; 
 }
-
 .tekst3 {
     position: relative;
     width: 85%;
@@ -164,7 +143,6 @@ body {
     color: #2a003f;
     font-weight: bold;
 }
-
 .hidden3 {
     height: 400px;
     position: relative;
@@ -176,16 +154,12 @@ body {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-
-
 .tekst3 p {
     padding-bottom: 45px;
 }
-
 .osoba3:hover + .hidden3 {
     z-index: 0;
 }
-
 .osoba4 {
     width: 30%;
     color: #2b4f60;
@@ -196,12 +170,10 @@ body {
     left: 70%;
     bottom: 950px;
 }
-
 .osoba4 h1 {
     text-align: center;
     border-radius: 20px; 
 }
-
 .hidden4 {
     height: 400px;
     position: relative;
@@ -213,7 +185,6 @@ body {
     border-top-left-radius: 25px;
     z-index: -1;
 }
-
 .tekst4 {
     position: relative;
     width: 85%;
@@ -224,11 +195,33 @@ body {
     font-weight: bold;
     text-align: right;
 }
-
 .tekst4 p {
     padding-bottom: 45px;
 }
-
 .osoba4:hover + .hidden4 {
     z-index: 0;
 }
+footer {
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    color: white;
+    border-radius: 6px;
+  }
+  footer a:hover {
+    color: #e74c3c;
+  }
+  footer a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color: #e74c3c;
+  }
+  footer a:hover::before {
+    right: 0;
+    left: 0;
+  }
