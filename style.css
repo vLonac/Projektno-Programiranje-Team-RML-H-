@@ -232,3 +232,29 @@ body {
 .osoba4:hover + .hidden4 {
     z-index: 0;
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    color: white;
+  }
+
+
+  footer a:hover {
+    color: #e74c3c;
+  }
+  footer a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color: #e74c3c;
+  }
+  footer a:hover::before {
+    right: 0;
+    left: 0;
+  }
